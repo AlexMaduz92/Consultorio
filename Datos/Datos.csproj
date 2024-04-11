@@ -54,6 +54,9 @@
     <Compile Include="Base de datos\ConexDB.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Core\IUnitOfWork.cs" />
+    <Compile Include="Core\RepositorioCita.cs" />
+    <Compile Include="Core\RepositorioMedico.cs" />
+    <Compile Include="Core\RepositorioPaciente.cs" />
     <Compile Include="Core\Repository.cs" />
     <Compile Include="Entidades\DCita.cs" />
     <Compile Include="Entidades\DMedico.cs" />
