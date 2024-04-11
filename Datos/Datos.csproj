@@ -53,6 +53,7 @@
   <ItemGroup>
     <Compile Include="Base de datos\ConexDB.cs" />
     <Compile Include="Class1.cs" />
+    <Compile Include="Entidades\DCita.cs" />
     <Compile Include="Entidades\DMedico.cs" />
     <Compile Include="Entidades\DPaciente.cs" />
     <Compile Include="Migrations\202404110116165_AddicionTablaDMedico.cs" />
@@ -62,6 +63,10 @@
     <Compile Include="Migrations\202404110136075_AddicionTablaDPaciente.cs" />
     <Compile Include="Migrations\202404110136075_AddicionTablaDPaciente.designer.cs">
       <DependentUpon>202404110136075_AddicionTablaDPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202404110140291_AddicionTablaDCita.cs" />
+    <Compile Include="Migrations\202404110140291_AddicionTablaDCita.designer.cs">
+      <DependentUpon>202404110140291_AddicionTablaDCita.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -76,6 +81,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202404110136075_AddicionTablaDPaciente.resx">
       <DependentUpon>202404110136075_AddicionTablaDPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202404110140291_AddicionTablaDCita.resx">
+      <DependentUpon>202404110140291_AddicionTablaDCita.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
