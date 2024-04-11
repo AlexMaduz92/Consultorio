@@ -53,6 +53,8 @@
   <ItemGroup>
     <Compile Include="Base de datos\ConexDB.cs" />
     <Compile Include="Class1.cs" />
+    <Compile Include="Core\IUnitOfWork.cs" />
+    <Compile Include="Core\Repository.cs" />
     <Compile Include="Entidades\DCita.cs" />
     <Compile Include="Entidades\DMedico.cs" />
     <Compile Include="Entidades\DPaciente.cs" />
@@ -86,6 +88,7 @@
       <DependentUpon>202404110140291_AddicionTablaDCita.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
