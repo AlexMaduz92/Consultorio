@@ -5,11 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
 using Datos.Entidades;
-using Datos.Core;
 
 namespace Datos.Base_de_datos
 {
-    internal class ConexDB : DbContext
+    public class ConexDB : DbContext
     {
         public ConexDB() : base("CONSULTORIORAD")
         {
@@ -19,7 +18,6 @@ namespace Datos.Base_de_datos
         public DbSet<Medico> Medicos { get; set; }
         public DbSet<Paciente> Pacientes { get; set; }
 
-        public RepositorioMedico RepositorioMedico => new RepositorioMedico(this);
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Cita>()
