@@ -12,8 +12,7 @@ namespace Datos.Base_de_datos
 
         public DbSet<Medico> Medicos { get; set; }
         public DbSet<Paciente> Pacientes { get; set; }
-
-    
+        public DbSet<Cita> Citas { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Cita>()

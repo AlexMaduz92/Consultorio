@@ -16,5 +16,8 @@ namespace Datos.Entidades
 
         public virtual Medico Medico { get; set; }
         public virtual Paciente Paciente { get; set; }
+
+        public string MedicoNombreApellido { get; set; }
+        public string PacienteNombreApellido { get; set; }
     }
 }

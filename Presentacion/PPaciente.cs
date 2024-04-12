@@ -10,7 +10,7 @@ namespace Presentacion
         public PPaciente()
         {
             InitializeComponent();
-           BtnGuardar.Click += BtnGuardar_Click;
+            BtnGuardar.Click += BtnGuardar_Click;
             BtnCerrar.Click += BtnCerrar_Click;
             BtnModificar.Click += BtnModificar_Click;
             BtnEliminar.Click += BtnEliminar_Click;
@@ -89,8 +89,6 @@ namespace Presentacion
             {
 
                 string query = "INSERT INTO Pacientes (Nombre, Apellidos, FechaIngreso, Estado) VALUES (@Nombre, @Apellidos, @FechaIngreso, @Estado)";
-
-
                 using (SqlConnection connection = new SqlConnection("Data Source=DESKTOP-Q6JBD0N\\SQLEXPRESS01;Initial Catalog=CONSULTORIORAD;Persist Security Info=True;User ID=sa;Password=123456789;MultipleActiveResultSets=True"))
 
                 {
