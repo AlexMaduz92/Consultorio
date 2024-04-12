@@ -300,18 +300,5 @@ namespace Presentacion
         {
             this.Close();
         }
-
-        private void fillByToolStripButton_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                this.medicosTableAdapter.FillBy(this.cONSULTORIORADDataSet2.Medicos);
-            }
-            catch (System.Exception ex)
-            {
-                System.Windows.Forms.MessageBox.Show(ex.Message);
-            }
-
-        }
     }
 }
