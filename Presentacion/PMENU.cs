@@ -11,6 +11,7 @@ namespace Presentacion
             BtnMedicos.Click += BtnMedicos_Click;
             BtnPacientes.Click += BtnPacientes_Click;
             BtnSalir.Click += BtnSalir_Click;
+            BtnCitas.Click += BtnCitas_Click;
         }
 
         private void BtnMedicos_Click(object sender, EventArgs e)
@@ -27,7 +28,8 @@ namespace Presentacion
 
         private void BtnCitas_Click(object sender, EventArgs e)
         {
-
+            PCita formCita = new PCita();
+            formCita.Show();
         }
 
         private void BtnSalir_Click(object sender, EventArgs e)

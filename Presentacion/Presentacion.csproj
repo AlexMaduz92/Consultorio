@@ -78,6 +78,37 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CONSULTORIORADDataSet3.xsd</DependentUpon>
     </Compile>
+    <Compile Include="CONSULTORIORADDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CONSULTORIORADDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CONSULTORIORADDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CONSULTORIORADDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CONSULTORIORADDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CONSULTORIORADDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CONSULTORIORADDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CONSULTORIORADDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CONSULTORIORADDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CONSULTORIORADDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PCita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PCita.Designer.cs">
+      <DependentUpon>PCita.cs</DependentUpon>
+    </Compile>
     <Compile Include="PMedico.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -154,6 +185,61 @@
     <None Include="CONSULTORIORADDataSet3.xss">
       <DependentUpon>CONSULTORIORADDataSet3.xsd</DependentUpon>
     </None>
+    <None Include="CONSULTORIORADDataSet4.xsc">
+      <DependentUpon>CONSULTORIORADDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="CONSULTORIORADDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CONSULTORIORADDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CONSULTORIORADDataSet4.xss">
+      <DependentUpon>CONSULTORIORADDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="CONSULTORIORADDataSet5.xsc">
+      <DependentUpon>CONSULTORIORADDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="CONSULTORIORADDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CONSULTORIORADDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CONSULTORIORADDataSet5.xss">
+      <DependentUpon>CONSULTORIORADDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="CONSULTORIORADDataSet6.xsc">
+      <DependentUpon>CONSULTORIORADDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="CONSULTORIORADDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CONSULTORIORADDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CONSULTORIORADDataSet6.xss">
+      <DependentUpon>CONSULTORIORADDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="CONSULTORIORADDataSet7.xsc">
+      <DependentUpon>CONSULTORIORADDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="CONSULTORIORADDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CONSULTORIORADDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CONSULTORIORADDataSet7.xss">
+      <DependentUpon>CONSULTORIORADDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="CONSULTORIORADDataSet8.xsc">
+      <DependentUpon>CONSULTORIORADDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="CONSULTORIORADDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CONSULTORIORADDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CONSULTORIORADDataSet8.xss">
+      <DependentUpon>CONSULTORIORADDataSet8.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -161,6 +247,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="PCita.resx">
+      <DependentUpon>PCita.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PMedico.resx">
       <DependentUpon>PMedico.cs</DependentUpon>
     </EmbeddedResource>
@@ -193,6 +282,9 @@
       <Project>{d12615a1-277d-47ee-940b-363e755626ca}</Project>
       <Name>Negocio</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
