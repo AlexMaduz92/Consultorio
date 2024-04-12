@@ -73,6 +73,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CONSULTORIORADDataSet2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="CONSULTORIORADDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CONSULTORIORADDataSet3.xsd</DependentUpon>
+    </Compile>
     <Compile Include="PMedico.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +143,17 @@
     <None Include="CONSULTORIORADDataSet2.xss">
       <DependentUpon>CONSULTORIORADDataSet2.xsd</DependentUpon>
     </None>
+    <None Include="CONSULTORIORADDataSet3.xsc">
+      <DependentUpon>CONSULTORIORADDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="CONSULTORIORADDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CONSULTORIORADDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CONSULTORIORADDataSet3.xss">
+      <DependentUpon>CONSULTORIORADDataSet3.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -150,6 +166,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PMENU.resx">
       <DependentUpon>PMENU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PPaciente.resx">
+      <DependentUpon>PPaciente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
