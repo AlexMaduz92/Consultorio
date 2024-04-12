@@ -40,36 +40,140 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="CONSULTORIORADDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CONSULTORIORADDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CONSULTORIORADDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CONSULTORIORADDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CONSULTORIORADDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CONSULTORIORADDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PMedico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PMedico.Designer.cs">
+      <DependentUpon>PMedico.cs</DependentUpon>
+    </Compile>
     <Compile Include="PMENU.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="PMENU.Designer.cs">
       <DependentUpon>PMENU.cs</DependentUpon>
     </Compile>
+    <Compile Include="PPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PPaciente.Designer.cs">
+      <DependentUpon>PPaciente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="CONSULTORIORADDataSet.xsc">
+      <DependentUpon>CONSULTORIORADDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CONSULTORIORADDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CONSULTORIORADDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CONSULTORIORADDataSet.xss">
+      <DependentUpon>CONSULTORIORADDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CONSULTORIORADDataSet1.xsc">
+      <DependentUpon>CONSULTORIORADDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="CONSULTORIORADDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CONSULTORIORADDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CONSULTORIORADDataSet1.xss">
+      <DependentUpon>CONSULTORIORADDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="CONSULTORIORADDataSet2.xsc">
+      <DependentUpon>CONSULTORIORADDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="CONSULTORIORADDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CONSULTORIORADDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CONSULTORIORADDataSet2.xss">
+      <DependentUpon>CONSULTORIORADDataSet2.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="PMedico.resx">
+      <DependentUpon>PMedico.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PMENU.resx">
       <DependentUpon>PMENU.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\patient.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Datos\Datos.csproj">
+      <Project>{32a379e9-5aae-476f-a5cc-78138fb52243}</Project>
+      <Name>Datos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Negocio\Negocio.csproj">
+      <Project>{d12615a1-277d-47ee-940b-363e755626ca}</Project>
+      <Name>Negocio</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
