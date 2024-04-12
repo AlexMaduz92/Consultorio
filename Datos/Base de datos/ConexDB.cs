@@ -1,25 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Datos.Entidades;
 using System.Data.Entity;
-using Datos.Entidades;
-using Datos.Core;
 
 namespace Datos.Base_de_datos
 {
-    internal class ConexDB : DbContext
+    public class ConexDB : DbContext
     {
-        public ConexDB() : base("CONSULTORIORAD")
+        public ConexDB()
+        : base("Data Source=DESKTOP-Q6JBD0N\\SQLEXPRESS01;Initial Catalog=CONSULTORIORAD;Persist Security Info=True;User ID=sa;Password=123456789;MultipleActiveResultSets=True")
         {
         }
 
-        // Agrega DbSet para cada una de tus entidades (tablas)
         public DbSet<Medico> Medicos { get; set; }
         public DbSet<Paciente> Pacientes { get; set; }
 
-        public RepositorioMedico RepositorioMedico => new RepositorioMedico(this);
+    
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Cita>()
@@ -34,6 +28,5 @@ namespace Datos.Base_de_datos
                 .HasForeignKey(c => c.PacienteId)
                 .WillCascadeOnDelete(false);
         }
-
     }
 }
